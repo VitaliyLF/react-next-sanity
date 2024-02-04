@@ -1,7 +1,20 @@
+export const metadata = {
+  title: 'Homepage',
+  description: 'Homepage descr',
+}
+
 const HomePage = () => {
   return (
-    <main className="home-page">
-      <h1>Homepage</h1>
+    <main className="homepage" id="main">
+      <div className="container">
+        <h1 className="title">Homepage</h1>
+        <p>
+          Homepage text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Ullam ad quisquam iure aliquid, distinctio reiciendis fugit quod
+          asperiores. Quia tenetur provident laboriosam aliquam corrupti tempora
+          doloremque esse culpa ipsam iste.
+        </p>
+      </div>
     </main>
   )
 }

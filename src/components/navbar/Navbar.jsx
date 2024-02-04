@@ -2,10 +2,11 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="">Logo</div>
-      <Link />
-    </div>
+    <header className="header">
+      <div className="container">
+        <div className="header__wrapper">{/* <Link /> */}</div>
+      </div>
+    </header>
   )
 }
 
