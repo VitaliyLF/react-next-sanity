@@ -1,6 +1,6 @@
 import localFont from 'next/font/local'
 import Footer from '@/components/footer/Footer'
-import Navbar from '@/components/navbar/NavBar'
+// import Navbar from '@/components/navbar/NavBar'
 import './globals.scss'
 
 export const AgrandirFont = localFont({
@@ -23,7 +23,7 @@ const RootLayout = ({ children }) => {
           Skip to content
         </a>
         <div className="site-container">
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
           <Footer />
         </div>
