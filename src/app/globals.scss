@@ -1,2 +1,8 @@
 @import './scss/vendor';
 @import './scss/main';
+
+// page components connection
+// @import '@/components/btn/Btn';
+
+// page blocks connection
+@import '@/components/header/Header';
