@@ -13,6 +13,10 @@
   font-size: 16px;
 }
 
+.site-container {
+  @include footerToBottom;
+}
+
 .scroll-lock {
   overflow: hidden;
 }

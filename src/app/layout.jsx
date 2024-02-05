@@ -1,7 +1,7 @@
 import localFont from 'next/font/local'
 import Footer from '@/components/footer/Footer'
-import './globals.scss'
 import Header from '@/components/header/Header'
+import './globals.scss'
 
 export const GilroyFont = localFont({
   src: [
