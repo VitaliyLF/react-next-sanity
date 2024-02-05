@@ -1,13 +1,28 @@
 import localFont from 'next/font/local'
-import Footer from '@/components/footer/Footer'
-// import Navbar from '@/components/navbar/NavBar'
+import Footer from '@/components/Footer/Footer'
 import './globals.scss'
+import Header from '@/components/Header/Header'
 
-export const AgrandirFont = localFont({
+export const GilroyFont = localFont({
   src: [
     {
-      path: './fonts/AgrandirRegular.woff2',
+      path: './fonts/GilroyRegular.woff2',
       weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/GilroyMedium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './fonts/GilroySemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './fonts/GilroyBold.woff2',
+      weight: '700',
       style: 'normal',
     },
   ],
@@ -15,15 +30,35 @@ export const AgrandirFont = localFont({
   variable: '--font-family-base',
 })
 
+export const TahomaFont = localFont({
+  src: [
+    {
+      path: './fonts/Tahoma-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Tahoma-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-family-accent',
+})
+
 const RootLayout = ({ children }) => {
   return (
-    <html lang="en" className="page">
-      <body className={`page__body ${AgrandirFont.className}`}>
+    <html
+      lang="en"
+      className={`page ${GilroyFont.variable} ${TahomaFont.variable}`}
+    >
+      <body className="page__body">
         <a className="skiplink" href="#main">
           Skip to content
         </a>
         <div className="site-container">
-          {/* <Navbar /> */}
+          <Header />
           {children}
           <Footer />
         </div>

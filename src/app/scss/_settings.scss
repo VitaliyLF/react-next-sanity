@@ -1,13 +1,9 @@
 .page {
   height: 100%;
-  // font-family: var(--font-family-base);
+  font-family: var(--font-family-base);
   background-color: var(--color-light);
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
-
-  @include tablet {
-    background-color: red;
-  }
 }
 
 .page__body {
@@ -15,10 +11,6 @@
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
-}
-
-.site-container {
-  @include footerToBottom;
 }
 
 .scroll-lock {
