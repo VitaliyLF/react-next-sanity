@@ -15,14 +15,16 @@ const HomePage = async () => {
       <div className="container">
         <h2 className="title">{data.title}</h2>
         <p>{data.description}</p>
-        <Image
-          className="image"
-          src={urlFor(data.titleImage).url()}
-          alt="name"
-          width={500}
-          height={500}
-          loading="lazy"
-        />
+        {data.titleImage && (
+          <Image
+            className="image"
+            src={urlFor(data.titleImage).url()}
+            alt="name"
+            width={500}
+            height={500}
+            loading="lazy"
+          />
+        )}
       </div>
     </main>
   )
