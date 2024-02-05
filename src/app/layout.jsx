@@ -1,5 +1,5 @@
 import localFont from 'next/font/local'
-import Header from '@/components/header/Header'
+// import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
 import './globals.scss'
 
@@ -58,7 +58,7 @@ const RootLayout = ({ children }) => {
           Skip to content
         </a>
         <div className="site-container">
-          <Header />
+          {/* <Header /> */}
           {children}
           <Footer />
         </div>
