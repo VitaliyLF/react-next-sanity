@@ -1,0 +1,14 @@
+.header {
+  &__container {
+    background-color: var(--color-black);
+    color: var(--color-light);
+
+    @include tablet {
+      background-color: green;
+    }
+  }
+
+  &__title {
+    font-size: 140px;
+  }
+}

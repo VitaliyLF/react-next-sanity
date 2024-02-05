@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <main className="homepage" id="main">
       <div className="container">
-        <h1 className="title">Homepage</h1>
+        <h2 className="title">Homepage</h2>
         <p>
           Homepage text Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Ullam ad quisquam iure aliquid, distinctio reiciendis fugit quod
