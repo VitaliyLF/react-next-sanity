@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import localFont from 'next/font/local'
 import Footer from '@/components/footer/Footer'
 import Header from '@/components/header/Header'
@@ -62,6 +63,7 @@ const RootLayout = ({ children }) => {
           {children}
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   )
